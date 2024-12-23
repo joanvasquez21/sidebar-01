@@ -1,0 +1,14 @@
+<div class="menu">
+  <div *ngFor="let section of menuSections">
+    <p class="section-title">{{ section.title }}</p>
+    <ul>
+      <li *ngFor="let item of section.items" [routerLink]="item.route">
+        <svg class="icon">
+
+        </svg>
+        <span>{{ item.name }}</span>
+        <span *ngIf="item.badge" class="badge">{{ item.badge }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

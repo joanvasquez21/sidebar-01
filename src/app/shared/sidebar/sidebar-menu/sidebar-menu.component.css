@@ -1,0 +1,54 @@
+.menu {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+li:hover {
+  background-color: #5b21b6;
+  color: white;
+}
+
+.icon {
+  width: 24px; /* Tamaño estándar */
+  height: 24px;
+  fill: currentColor; /* Aplica el color actual del texto */
+  stroke: none; /* Elimina trazos si están presentes */
+  flex-shrink: 0;
+  margin-right: 8px; /* Espaciado entre ícono y texto */
+}
+
+li:hover .icon {
+  fill: white; /* Cambia el color a blanco en hover */
+
+}
+
+
+.badge {
+  background-color: #5b21b6;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin-left: auto;
+  font-size: 12px;
+  white-space: nowrap; /* Evita que el texto del badge se desborde */
+}

@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ocupa toda la altura disponible */
+  }
+  
+  body {
+    display: flex;
+    justify-content: start; /* Mantener el sidebar a la izquierda */
+    background-color: #ffffff; /* Fondo del cuerpo */
+    font-family: 'Inter', sans-serif; /* Tipografía global */
+  }
+  
+  * {
+    box-sizing: border-box; /* Evita problemas con padding y border */
+  }
+  

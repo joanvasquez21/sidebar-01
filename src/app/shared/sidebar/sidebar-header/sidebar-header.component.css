@@ -1,0 +1,83 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  padding: 0 12px; 
+}
+
+.logo {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 8px; 
+  margin: 0; 
+  height: 48px; 
+  position: relative; 
+}
+
+.logo-img {
+  position: absolute;
+  width: 150px; 
+  height: 150px; 
+  object-fit: contain; 
+  top: -51px; 
+  left: 0; 
+}
+
+.brand {
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #333; 
+  margin: 0; 
+  line-height: 48px; 
+  padding-left: 100px; 
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background-color: #f9f9f9; 
+  padding: 8px 12px; 
+  border-radius: 8px; 
+  border: 1px solid #e5e5e5; 
+  max-width: 400px; 
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e3e5; 
+  width: 36px; 
+  height: 36px;
+  border-radius: 8px;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 8px;
+  background-color: transparent;
+}
+
+.key-command {
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+}
+
+.command-icon,
+.key-command span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e3e5;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}

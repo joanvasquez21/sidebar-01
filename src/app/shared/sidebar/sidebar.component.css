@@ -1,0 +1,11 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuir el contenido verticalmente */
+  width: 260px; /* Ancho del sidebar */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye padding en las dimensiones */
+}
