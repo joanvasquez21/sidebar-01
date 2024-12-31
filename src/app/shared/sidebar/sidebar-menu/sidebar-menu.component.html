@@ -1,14 +1,15 @@
 <div class="menu">
-  <div *ngFor="let section of menuSections">
+  <div *ngFor="let section of menuSections; let sectionIndex = index">
     <p class="section-title">{{ section.title }}</p>
     <ul>
-      <li *ngFor="let item of section.items" [routerLink]="item.route">
+      <li *ngFor="let item of section.items; let itemIndex = index" [routerLink]="item.route"
+        [attr.data-name]="item.name">
         <svg class="icon">
-
+          <use [attr.xlink:href]="'assets/icons/icons.svg#' + item.icon"></use>
         </svg>
         <span>{{ item.name }}</span>
-        <span *ngIf="item.badge" class="badge">{{ item.badge }}</span>
       </li>
     </ul>
+    <hr *ngIf="sectionIndex === 0" class="divider" />
   </div>
 </div>

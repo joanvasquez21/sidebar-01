@@ -6,10 +6,14 @@ import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [SidebarFooterComponent, SidebarHeaderComponent, SidebarMenuComponent ],
+  imports: [SidebarFooterComponent, SidebarHeaderComponent, SidebarMenuComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+  isCollapsed = false;
 
+  toggleSidebar(): void {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

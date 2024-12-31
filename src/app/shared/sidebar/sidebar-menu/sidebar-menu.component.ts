@@ -8,17 +8,18 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule, CommonModule],
   templateUrl: './sidebar-menu.component.html',
   styleUrls: ['./sidebar-menu.component.css']
-})export class SidebarMenuComponent {
+})
+export class SidebarMenuComponent {
   menuSections = [
     {
       title: 'Menu',
       items: [
-        { name: 'Dashboard', route: '/dashboard' },
-        { name: 'Products', route: '/products' },
-        { name: 'Schedule',  route: '/schedule' },
-        { name: 'My Task',  route: '/tasks', badge: 4 },
-        { name: 'Reporting', route: '/reporting' },
-      ]
+        { name: 'Dashboard', icon: 'icon-dashboard', route: '/dashboard' },
+        { name: 'Products', icon: 'icon-products', route: '/products' },
+        { name: 'Schedule', icon: 'icon-schedule', route: '/schedule' },
+        { name: 'My Task', icon: 'icon-tasks', route: '/tasks' },
+        { name: 'Reporting', icon: 'icon-reporting', route: '/reporting' },
+      ],
     },
     {
       title: 'Account',
@@ -27,12 +28,22 @@ import { RouterModule } from '@angular/router';
         { name: 'Messages', icon: 'icon-messages', route: '/messages', badge: 8 },
         { name: 'Document', icon: 'icon-document', route: '/document' },
         { name: 'Notification', icon: 'icon-notification', route: '/notification' },
-      ]
-    }
+      ],
+    },
   ];
 
-  logIconHref(icon: string): void {
-    const href = `assets/icons/icons.svg#${icon}`;
-    console.log('Icon HREF:', href);
+  shouldShowDivider(section: any, sectionIndex: number, itemIndex: number): boolean {
+    console.log('Evaluating divider for:', { section, sectionIndex, itemIndex });
+
+    if (sectionIndex === 0 && itemIndex === section.items.length - 1) {
+      console.log('Divider after last item in Menu');
+      return true;
+    }
+
+    if (section.title === 'Account' && section.items[itemIndex]?.name === 'Notification') {
+      console.log('Divider after Notification in Account');
+      return true;
+    }
+    return false;
   }
 }
