@@ -1,27 +1,23 @@
-# Sidebar01
+### Sidebar
+Es un proyecto diseñado para proporcionar una interfaz lateral moderna y minimalista para aplicaciones web. La barra lateral incluye un menú funcional con categorías claramente organizadas y un diseño responsivo adecuado para diferentes tipos de proyectos, como paneles de control o sistemas de gestión.
+Mas adelante en futuras versiones se añadirá una funcionalidad desplegable para la barra lateral. Es decir que al hacer clic en el ícono, la barra se contraiga y muestre solo los íconos, ofreciendo una experiencia más compacta y amigable para el usuario.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+#### Características principales
+-  Diseñado con un enfoque minimalista.
+- Menú con diferentes secciones.
+- Facil personalización: Puedes adaptar el diseño y los íconos a las necesidades de tu aplicación.
+- Tecnologías modernas: Construido utilizando Angular para garantizar rendimiento y escalabilidad.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![01_sidebar](https://github.com/user-attachments/assets/6bb8c877-a242-4a94-9ca4-61bcf7fa4028)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Instalación
+1. Clona el repositorio:
+`git clone https://github.com/joanvasquez21/sidebar-01.git`
+2. Instala las dependencias
+`npm install`
+3. Inicia la aplicación
+`ng serve`
+5. Navega a http://localhost:4200
